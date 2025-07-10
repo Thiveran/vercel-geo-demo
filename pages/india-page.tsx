@@ -3,7 +3,7 @@ export default function IndiaPage() {
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>🇮🇳 Namaste! Welcome to the India page.</h1>
       <p>This page is customized for visitors from India. Your are redirected</p>
-      <h2 style='color:red' >THIV EREN</h2>
+      <h2 style={{ color: 'red' }}>THIV EREN</h2>
     </div>
   );
 }
