@@ -3,6 +3,7 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const country = request.geo?.country || 'unknown';
+  console.log('Visitor country:', country);
   if (country === 'IN') {
     return NextResponse.redirect(new URL('/india-page', request.url));
   }
