@@ -6,6 +6,9 @@ export function middleware(request: NextRequest) {
   if (country === 'IN') {
     return NextResponse.redirect(new URL('/india-page', request.url));
   }
+  if (country === 'US') {
+  return NextResponse.redirect(new URL('/usa-page', request.url));
+}
   return NextResponse.next();
 }
 
